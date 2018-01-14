@@ -1,0 +1,44 @@
+format-menu{
+    .formatmenu{
+            background: white;
+            width: 100%;
+            height: 150px;
+            position: absolute;
+            z-index: 5;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            ion-label{
+                font-weight: 600;
+                opacity: 0.5;
+                margin-top: 23px;
+            }
+            .buttons{
+                width: 100%;
+                overflow-x: scroll; 
+                overflow-y: hidden;
+                .buttons-scroll{
+                margin: 0 auto;
+                   width: 570px;
+                margin-top: 10px;
+                .formbtt{
+                     background-color: #cee9f5;
+                   border-radius: 100px;
+                   width: 90px;
+                   height: 40px;
+                   text-transform: none;
+                   margin: 6px;
+                   .button-inner{
+                       color: #0398ca;
+                   }
+                }
+                .activformbtt{
+                   background-color: #0398ca;
+                   border-radius: 100px;
+                   width: 90px;
+                   height: 40px;
+                   text-transform: none;
+                   margin: 6px;
+                }
+            }
+            }
+        }
+}

@@ -1,0 +1,26 @@
+<ion-header mode="ios">
+  <ion-navbar mode="ios">
+    <ion-title mode="ios">Информация</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<ion-list mode="ios" no-lines>
+  <ion-list-header class="info" mode="ios">
+   о приложении
+  </ion-list-header>
+  <ion-item-group mode="ios">
+    <button (tap)="developerSite()" mode="ios" ion-item><ion-label>Сайт разработчика</ion-label></button>
+    <button (tap)="ins()" mode="ios" ion-item><ion-label>Инструкция</ion-label></button>
+  </ion-item-group>
+  <ion-list-header mode="ios" class="extensiv">
+    дополнительно:
+  </ion-list-header>
+  <ion-item-group mode="ios">
+    <button (tap)="pol()" mode="ios" ion-item><ion-label>Политика конфиденциальности</ion-label></button>
+    <button (tap)="rateApp()" mode="ios" ion-item><ion-label>Оцените приложение</ion-label></button>
+    <button (tap)="openMenu()" mode="ios" ion-item><ion-label>Поделиться ссылкой на приложение</ion-label></button>
+  </ion-item-group>
+</ion-list>
+<button (tap)="quitApp()" no-lines class="quit" mode="md" ion-item><ion-label>Выход</ion-label></button>
+</ion-content>

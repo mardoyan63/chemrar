@@ -1,0 +1,170 @@
+page-scan {
+     ion-header{
+        ion-navbar{
+            ion-title{
+                .toolbar-title{
+                    color: #0398ca;
+                }
+            }
+        }
+    }
+    //////sdfsdf
+    .content{
+        background: transparent;
+    }
+    ion-content{
+            .scroll-content{
+                overflow: hidden;
+            }
+        .ground{
+                height: 100%;
+                width: 100%;
+                //background-color: #a0a4af;
+                ion-grid{
+                    height: 100%;
+                    .topitem,.bottomitem{
+                        height: 25%;
+                    }
+                    .centeritem{
+                        height: 50%;
+                    }
+                    ion-row{
+                        ion-col{
+                                display: flex;
+                                align-items: center;
+                            .description{
+                                color: white;
+                                margin: 0;
+                                text-align: center;
+                                    z-index: 1;
+                            }
+                            .scan-logo{
+                                width: 40vh;
+                                height: 40vh;
+                                margin: auto; 
+                                border-radius: 13px;
+                                outline: 200px solid rgba(0,0,0,0.3);
+                                z-index: -1;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                
+                            }
+                            .btt{
+                    margin: auto;
+                    height: 11vh;
+                    width: 11vh;
+                    background-color: white;
+                    border-radius: 100%;
+                    padding: 0;
+                    .circle{
+                       height: 9vh;
+                       width: 9vh; 
+                       border: 2px solid #0398ca;
+                       border-radius: 100%;
+                    }
+                }    
+                        }
+                    }
+                }
+        }
+            /*.footer::before{
+                background-image: none;
+            }*/
+            
+        }
+        
+    }
+   
+
+////////////////////////////////////////////////////////////////////
+ .action-sheet-ios{ 
+ .action-sheet-button:last-child{
+
+    }
+    .action-sheet-title{
+        border: none;
+            padding-top: 20px;
+    padding-bottom: 22px;
+    }
+    .action-sheet-button{
+        border: none;
+        color: rgba(0,0,0,0.8);
+    &.action-sheet-cancel{
+        color: #0398ca;
+        .button-inner{
+            justify-content: center;
+        }
+    }
+    .button-inner{
+        
+        justify-content: start;
+    ion-icon{
+        color: #0398ca;
+            font-size: 1.8em;
+                margin-left: 10%;
+    }
+    }
+
+}
+        
+}
+////////////////////////////////////////////////////////////////////////
+.action-sheet-group{
+        .action-sheet-button{
+        
+            .button-inner{
+                font-size: 1.5rem;
+            }
+        }
+}
+.action-sheet-md{
+     .action-sheet-title{
+    font-size:  1.3rem;
+    text-align: center;
+    padding-top: 21px;
+    opacity: 0.8;
+}
+    .action-sheet-group{
+        border-radius: 13px;
+        background-color: white;
+        margin: 8px 10px 0px 10px;
+        .action-sheet-button{
+        padding: 21px 16px;
+        .button-inner{
+            justify-content: start;
+            
+            ion-icon{
+                margin-right: 16px;
+                font-size: 1.8em;
+                color: #0398ca;
+                margin-left: 10%;
+            }
+        }
+        &.action-sheet-cancel {
+            color: #0398ca;
+            font-weight: 600;
+            .button-inner{
+                justify-content: center;
+            }
+        }
+    }   
+    }
+    .action-sheet-container{
+        background: none;
+    }
+    
+}
+/////////////////////////////////////////////////////////////////////
+.alert-ios{
+    .alert-title{
+        margin-top: 10px;
+    }
+    
+    .alert-button{
+        color: red;
+    }
+    .alert-button:last-child{
+        color: #0398ca;
+    }
+} 

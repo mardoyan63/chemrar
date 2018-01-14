@@ -1,0 +1,36 @@
+<ion-content>
+    <ion-grid>
+       <ion-row justify-content-center>
+           <ion-col><ion-label class="appicon"></ion-label></ion-col>
+       </ion-row>
+<ion-row justify-content-center>
+    <ion-col col-12>
+    <ion-label text-center class="text">Введите ваш номер телефона.<br>На него будет зарегистрирован ваш аккаунт<br>Мы отправим вам смс-код авторизации.</ion-label>
+    </ion-col>
+</ion-row>
+  <ion-row justify-content-center>
+    <ion-col col-10>
+     
+         <img class="my-img" src="assets/tel.png">
+    <input placeholder="Номер телефона" [textMask]="{mask: mask,placeholderChar:'_'}" type="tel"   [(ngModel)]="num"   class="inp"/>
+            <!-- mask="+(***)**-**-**-**" -->
+
+    </ion-col>
+  </ion-row>
+<ion-row justify-content-center>
+    <ion-col  col-12>
+        <ion-label class="text" text-center>Cогласен с</ion-label>
+        <a class="activetext">политикой конфиденциальности</a>
+       <!--<div>{{'+374957895' | format}}</div>-->
+       <!--<div><input  [textMask]="{mask: mask}" [(ngModel)]="myModel" type="text"></div>-->
+       <div>
+    </div>
+    </ion-col>
+</ion-row>
+<ion-row justify-content-center>
+    <ion-col col-7>
+        <button (tap)="next()" class="btt" ion-button round>Получить код</button>
+    </ion-col>
+</ion-row>
+</ion-grid>
+</ion-content>

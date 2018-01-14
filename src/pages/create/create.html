@@ -1,0 +1,224 @@
+<ion-header mode="ios">
+  <ion-navbar mode="ios">
+    <ion-title mode="ios">
+      {{pageName}}
+    </ion-title>
+    <button (click)="orDlete()" *ngIf="new" float-left ion-button mode="ios">
+    <ion-icon  name="annaniks-удалить"></ion-icon>
+    </button>
+    <button *ngIf="!new" (tap)="new=!new" float-right ion-button mode="ios">
+    <ion-icon  name="annaniks-152"></ion-icon>
+    </button>
+    <button (tap)="save=true" *ngIf="new" float-right ion-button mode="ios">
+    <ion-icon  name="annaniks-окей"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content (tap)="new && dbclick()">
+  <div *ngIf="!new" class="desc-texts">
+    <div class="texts">
+      <ion-label>Дважды нажмите чтобы открыть<br>периодическую таблицу элементов</ion-label>
+      <ion-label>Проведите по экрану чтобы<br>нарисовать связь между элементами</ion-label>
+      <ion-label>Долгое нажатие откроет<br>панель быстрого доступа к элементам</ion-label>
+      <ion-label>Нажатие на элемент откроет меню управления<br>элементом</ion-label>
+    </div>
+  </div>
+  <ion-grid *ngIf="save" class="format-menu">
+    <ion-row justify-content-center>
+      <ion-col> <ion-label text-center class="desctext">Выберите один или несколько<br>форматов сохранения документа</ion-label></ion-col>
+    </ion-row>
+    <ion-row justify-content-center>
+      <ion-col>
+        <ion-list no-lines  mode="md">
+      <ion-item mode="md">
+        <ion-label>Png</ion-label>
+        <ion-checkbox mode="md"></ion-checkbox>
+      </ion-item>
+      <ion-item mode="md">
+        <ion-label>Extended MDL MOL</ion-label>
+        <ion-checkbox mode="md"></ion-checkbox>
+      </ion-item>
+      <ion-item mode="md">
+        <ion-label>InChI</ion-label>
+        <ion-checkbox mode="md"></ion-checkbox>
+      </ion-item>
+      <ion-item mode="md">
+        <ion-label>SMILES</ion-label>
+        <ion-checkbox mode="md"></ion-checkbox>
+      </ion-item>
+      <ion-item mode="md"> 
+        <ion-label>CML</ion-label>
+        <ion-checkbox mode="md"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-center>
+      <ion-col class="bttbox">
+         <button (click)="save=!save" mode="ios" class="btt" ion-button round>Сохранить</button>
+      </ion-col>
+    </ion-row>
+      </ion-grid>
+  <div [ngClass]="{'menu' : showmenu, 'menu-close' : !showmenu}">
+    <div class="activbtt">
+      <button (tap)="showmenu=!showmenu" ion-button mode="ios" mode="ios">
+      <ion-icon *ngIf="showmenu" name="ios-arrow-down"></ion-icon>
+      <ion-icon *ngIf="!showmenu" name="ios-arrow-up"></ion-icon>
+    </button></div>
+    <ion-grid text-nowrap>
+      <ion-row text-nowrap>
+        <ion-col><button ion-button mode="ios"><img src="assets/menu-icons/1_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/menu-icons/2_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/menu-icons/3_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/menu-icons/4_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/menu-icons/5_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/menu-icons/6_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/menu-icons/7_1.png"  ></button></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col><button ion-button mode="ios"><img src="assets/menu-icons/8_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/menu-icons/9_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/menu-icons/10_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/menu-icons/11_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/menu-icons/12_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/menu-icons/13_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/menu-icons/14_1.png"  ></button></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col><button ion-button mode="ios"><img src="assets/menu-icons/15_1.png"  ></button></ion-col>
+        <ion-col><button (tap)="openElements()" ion-button mode="ios"><img src="assets/menu-icons/16_1.png"  ></button></ion-col>
+        <ion-col><button (tap)="openLines()" ion-button mode="ios"><img src="assets/menu-icons/17_1.png"  ></button></ion-col>
+        <ion-col><button (tap)="openTransform()" ion-button mode="ios"><img src="assets/menu-icons/18_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/menu-icons/19_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/menu-icons/20_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/menu-icons/21_1.png"  ></button></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+  <div [ngClass]="{'elements' : showelements, 'elements-close' : !showelements}">
+    <div class="activbtt">
+      <button (tap)="openElements()" ion-button mode="ios" mode="ios">
+      <ion-icon *ngIf="showelements" name="ios-arrow-down"></ion-icon>
+      <ion-icon *ngIf="!showelements" name="ios-arrow-up"></ion-icon>
+    </button></div>
+    <ion-grid text-nowrap>
+      <ion-row text-nowrap>
+        <ion-col><button ion-button mode="ios"><img src="assets/atom-icons/C.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/atom-icons/N.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/atom-icons/O.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/atom-icons/P.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/atom-icons/S.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/atom-icons/H.png"  ></button></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col><button ion-button mode="ios"><img src="assets/atom-icons/F.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/atom-icons/Cl.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/atom-icons/Br.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/atom-icons/I.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img class="special" src="assets/atom-icons/11_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img class="special" src="assets/atom-icons/12_1.png"  ></button></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col><button ion-button mode="ios"><img class="special" src="assets/atom-icons/13_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img class="special" src="assets/atom-icons/14_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img class="special" src="assets/atom-icons/15_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img class="special" src="assets/atom-icons/16_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img class="special" src="assets/atom-icons/17_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img class="special" src="assets/atom-icons/18_1.png"  ></button></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+  <div [ngClass]="{'transforms' : showtransforms, 'transforms-close' : !showtransforms}">
+    <div class="activbtt">
+      <button (tap)="openTransform()" ion-button mode="ios" mode="ios">
+      <ion-icon *ngIf="showtransforms" name="ios-arrow-down"></ion-icon>
+      <ion-icon *ngIf="!showtransforms" name="ios-arrow-up"></ion-icon>
+    </button></div>
+    <ion-grid text-nowrap>
+      <ion-row text-nowrap>
+        <ion-col><button ion-button mode="ios"><img class="special" src="assets/move/1_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img class="special" src="assets/move/2_2.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img class="special" src="assets/move/3_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img class="special" src="assets/move/4_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img class="special" src="assets/move/5_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img class="special" src="assets/move/6_1.png"  ></button></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col><button ion-button mode="ios"><img src="assets/move/7_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/move/8_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/move/9_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/move/10_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/move/11_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/move/12_1.png"  ></button></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col><button ion-button mode="ios"><img src="assets/move/13_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/move/14_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/move/15_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/move/16_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/move/17_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/move/18_1.png"  ></button></ion-col>
+      </ion-row>
+       <ion-row>
+        <ion-col><button ion-button mode="ios"><img src="assets/move/19_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/move/20_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/move/21_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/move/22_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/move/23_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/move/24_1.png"  ></button></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+  <div [ngClass]="{'lines' : showlines, 'lines-close' : !showlines}">
+    <div class="activbtt">
+      <button (tap)="openLines()" ion-button mode="ios" mode="ios">
+      <ion-icon *ngIf="showlines" name="ios-arrow-down"></ion-icon>
+      <ion-icon *ngIf="!showlines" name="ios-arrow-up"></ion-icon>
+    </button></div>
+    <ion-grid text-nowrap>
+      <ion-row text-nowrap>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/1_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/2_2.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/3_3.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/4_4.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/5_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/6_1.png"  ></button></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/7_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/8_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/9_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/10_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/11_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/12_1.png"  ></button></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/13_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/14_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/15_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/16_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/17_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/18_1.png"  ></button></ion-col>
+      </ion-row>
+       <ion-row>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/19_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/20_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/21_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/22_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/23_1.png"  ></button></ion-col>
+        <ion-col><button ion-button mode="ios"><img src="assets/lines/24_1.png"  ></button></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+  
+
+</ion-content>

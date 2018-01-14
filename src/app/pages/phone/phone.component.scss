@@ -1,0 +1,100 @@
+page-phone{
+ion-content{
+    ion-grid{
+            margin-top: 25px;
+        ion-row{
+            margin-top: 8px;
+            ion-col{
+                ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #0398ca;
+  font-size: 17px;
+  text-align:left;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #0398ca;
+  text-align:center;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #0398ca;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #0398ca;
+}
+                .inp{
+                    padding-left: 14vw;
+                    color: #0398ca;
+                    width: 90%;
+                        font-size: 20px;
+                        border: none;
+                        border-bottom: 2px solid rgba(0,0,0,0.15);
+                }
+                    .inp:focus{
+                    border-bottom: 2px solid rgba(0,153,203,1);
+                }
+                .my-img{
+                    position: absolute;
+                    left: 12vw;
+                }
+               ion-icon{
+                   font-size: 30px;
+                   color: #0398ca;
+                   opacity: 0.5;
+               }
+                 .text{
+        color: #8b8d92;
+        font-size: 12px;
+    }
+  
+                .activetext{
+                     color: #0398ca;
+                    font-size: 12px;
+                    border-bottom: 1px solid #0398ca;
+                }
+                .activetext.activated{
+                    color:#8b8d92;
+                    border-color: #8b8d92;
+                }
+                .btt{
+                    background-color: #0398ca;
+                    text-transform: none;
+                    height: 13vw;
+                    width: 50vw;
+                }
+                .btt.activated{
+                    background-color: #8b8d92;
+                }
+                .appicon{
+                    background-image: url('./../assets/Logo.png');
+                    background-size: cover; 
+                    background-repeat: no-repeat; 
+                    height: 17vw;
+                    width: 23vw;
+                }
+            }
+        }
+    }
+   
+   .item.item-input.input-has-focus .item-inner{
+                    box-shadow: inset 0 -1px 0 0 #0398ca;
+                    border-bottom-color: #0398ca;
+                }
+  
+    .col{
+                text-align: center;
+        }
+    .item{
+            padding-left: 0;
+         }
+        .label{
+            margin: 0  auto;
+        }
+        .item.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+            box-shadow: inset 0 -1px 0 0 rgb(209, 212,219);
+                border-bottom-color: rgb(209, 212,219);
+        }
+            .item.item-block .item-inner{
+                box-shadow: inset 0 -1px 0 0 rgb(209, 212,219);
+                border-bottom-color: rgb(209, 212,219);
+            }
+}
+}

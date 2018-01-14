@@ -1,0 +1,11 @@
+<div  class="formatmenu">
+        <ion-label text-center>Показать форматы файлов:</ion-label>
+        <div class="buttons">
+            <ion-grid class="buttons-scroll" text-nowrap>
+                <ion-row text-nowrap>
+                    <ion-col *ngFor="let btt of formbtt; let i=index"><button mode="ios" ion-button [ngClass]="{'activformbtt' : btt.activ, 'formbtt' : !btt.activ}">{{btt.name}}</button></ion-col>
+                </ion-row>
+            </ion-grid>
+            
+        </div>
+    </div>

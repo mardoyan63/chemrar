@@ -1,0 +1,24 @@
+.tabs{
+    
+     
+.tab-button[aria-selected=true]{
+    .tab-button-icon{
+        background-color:#0398ca;
+        color: white;
+    }
+
+}
+.tab-button-icon{
+    color: #0398ca;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+}
+.tab-button-text{
+    color: #0398ca;
+}
+.tab-button-icon::before{
+    margin: 0 auto;
+}
+}

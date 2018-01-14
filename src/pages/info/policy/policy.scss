@@ -1,0 +1,36 @@
+policy-page{
+    ion-header{
+        .toolbar ion-title{
+            padding: 0
+        }
+        ion-navbar{
+            ion-title{
+                .toolbar-title{
+                    color: #0398ca;
+                }
+            }
+        }
+        .bar-button{
+            background: none;
+            box-shadow: none;
+            color: #0398ca;
+            height: 100%;
+            ion-icon{
+                font-size: 2em;
+            }
+            .back-button-text-ios{
+                opacity: 0;
+            }
+        }
+        .button.activated{
+            background-color: white;
+            box-shadow: none;
+        }
+    }
+    ion-content{
+        .text{
+            text-align: center;
+            margin: 10px;
+        }
+    }
+}

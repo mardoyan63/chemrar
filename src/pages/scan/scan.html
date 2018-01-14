@@ -1,0 +1,32 @@
+<ion-header mode="ios">
+<ion-navbar mode="ios">
+        <ion-title mode="ios">Сканировать</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content noscroll>
+  <div class="ground">
+    <ion-grid>
+      <ion-row class="topitem" justify-content-center>
+        <ion-col >
+          <ion-label class="description">Отсканируйте химическую<br>структуру для дальнейшей работы</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row class="centeritem" justify-content-center>
+        <ion-col>
+          <div class="scan-logo" [ngStyle]="{'background-image':'url(' + picture + ')'}">
+            <!--<img *ngIf="picture.length>0" [src]="picture" alt="">-->
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="bottomitem" justify-content-center>
+        <ion-col>
+          <button (tap)="takePicture()" mode='ios' ion-button class="btt">
+        <div class="circle"></div>
+      </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+

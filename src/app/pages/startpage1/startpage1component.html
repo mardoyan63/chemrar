@@ -1,0 +1,69 @@
+<ion-content text-center>
+   
+    <ion-slides zoom="false"(ionSlideWillChange)="change()">
+
+  <ion-slide >
+     <ion-grid>
+         <ion-row class="photo" justify-content-center>
+            <ion-col>
+                <div class="descphoto"></div>
+            </ion-col>
+        </ion-row>
+        <ion-row class="text" justify-content-center>
+            <ion-col col-12>
+                <ion-label class="maintext">Сохраняйте</ion-label>
+                <ion-label class="desctext">на своем мобильном телефоне файлы<br>в формате mol inCHL и SMILES</ion-label>
+            </ion-col>
+        </ion-row>
+        <ion-row class="btt" justify-content-center>
+            <ion-col col-12>
+               
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+  </ion-slide>
+
+  <ion-slide>
+     <ion-grid>
+         <ion-row class="photo" justify-content-center>
+            <ion-col>
+                <div class="descphoto"></div>
+            </ion-col>
+        </ion-row>
+        <ion-row class="text" justify-content-center>
+            <ion-col col-12>
+                <ion-label class="maintext">Сканируйте</ion-label>
+                <ion-label class="desctext">фотографии химических<br>структур</ion-label>
+            </ion-col>
+        </ion-row>
+        <ion-row class="btt" justify-content-center>
+            <ion-col col-12>
+                
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-grid>
+         <ion-row class="photo" justify-content-center>
+            <ion-col>
+                <div class="descphoto"></div>
+            </ion-col>
+        </ion-row>
+        <ion-row class="text" justify-content-center>
+            <ion-col col-12>
+                <ion-label class="maintext">Редактируйте</ion-label>
+                <ion-label class="desctext">структуры в удобном<br>редакторе</ion-label>
+            </ion-col>
+        </ion-row>
+        <ion-row class="btt" justify-content-center>
+            <ion-col col-12>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+  </ion-slide>
+
+</ion-slides>
+<button (tap)="nextSlide()" class="donebtt" ion-button round>{{buttonLabel}}</button>
+</ion-content>

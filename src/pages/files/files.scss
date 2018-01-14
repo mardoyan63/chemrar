@@ -1,0 +1,164 @@
+page-files{
+    ion-header{
+        ion-navbar{
+            ion-title{
+                .toolbar-title{
+                    color: #0398ca;
+                }
+            }
+             .button{
+                    background: none;
+                    box-shadow: none;
+                    margin: 0 0 0 0;
+                    height: 100%;
+                    ion-icon{
+                        color: #0398ca;
+                        font-size: 25px;
+                    }
+                }
+                .button.activated{
+                    background: none;
+                    box-shadow: none;
+                    }
+               
+        }
+    }
+    ion-content{
+        
+        ion-list{
+            border-top: 0.55px solid rgba(0, 0, 0, 0.3),
+        }
+        .btt1{
+            display: flex;
+            align-items: center;
+            background-color: #e5f3fa;
+            padding: 0 0 0 0;
+            .myfab{
+                margin: 18px;
+                background-color: #8bcee7;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                border-radius: 100%;
+            ion-icon{
+                    font-size: 25px;
+                    color: #0398ca;
+                    margin: auto;
+                    }
+            }
+        }
+        .btt1.activated{
+            background-color: #e5f3fa;
+        }
+         .btt2{
+             display: flex;
+            align-items: center;
+             background-color: #f0bfc1;
+             padding: 0 0 0 0;
+            .myfab{
+                margin: 18px;
+                background-color: #bc5558;
+                 width: 40px;
+                height: 40px;
+                display: flex;
+                border-radius: 100%;
+             ion-icon{
+                    font-size: 25px;
+                    margin: auto;
+                    }
+            }
+        }
+         .btt2.activated{
+            background-color: #f0bfc1;
+        }
+       
+        .slideitem{
+            height: 100%;
+            .doc{
+                display: flex;
+                margin-left: 11px;
+                background-color: #cee9f5;
+                height: 45px;
+                width: 45px;
+                border-radius: 100%;
+                ion-icon{
+                    margin: auto;
+                    color: #0398ca;
+                    font-size: 28px;
+                }
+            }
+             .jpg{
+                display: flex;
+                margin-left: 11px;
+                background-color: #0398ca;
+                height: 45px;
+                width: 45px;
+                border-radius: 13%;
+                ion-icon{
+                    margin: auto;
+                    font-size: 28px;
+                    color: white;
+                }
+            }
+            .molname{
+                color: #0398ca;
+                margin: 0 0 0 0;
+                font-size: 16px;
+                opacity: 0.6;
+            }
+            .moldes{
+                 margin: 0 0 0 0;
+                 font-size: 15px;
+                 opacity: 0.6;
+            }
+        }
+        .list ion-item-sliding{
+            height: 76px;
+        }
+    }
+    ion-segment{
+            padding: 10px 10px 10px 10px;
+    }
+    .segment .segment-button{
+        border-color: #0398ca;
+        line-height: 3rem;
+        height: 3rem;
+        color: #0398ca;
+        height: 23px;
+       display: flex;
+       align-items: center;
+       ion-label{
+           text-align: center;
+       }
+    }
+    .segment .segment-button.segment-activated{
+        background-color: #0398ca;
+    } 
+    .item-inner{
+        border: none;
+    }
+    .list .item-block .item-inner{
+        border: none;
+    }
+    ion-item-options:not([icon-left]) .button:not([icon-only]) ion-icon, ion-item-options:not([icon-start]) .button:not([icon-only]) ion-icon{
+        padding: 0 0 0 0;
+    }
+    //////////////////////////////////////////
+    action-sheets-basic-page{
+    .action-sheets-basic-page {
+  .ion-md-share {
+    color: #ED4248;
+  }
+  .ion-md-arrow-dropright-circle {
+    color: #508AE4;
+  }
+  .ion-md-heart-outline {
+    color: #31D55F;
+  }
+  .action-sheet-cancel ion-icon,
+  .action-sheet-destructive ion-icon {
+    color: #757575;
+  }
+}
+}
+}

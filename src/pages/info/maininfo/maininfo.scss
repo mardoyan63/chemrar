@@ -1,0 +1,45 @@
+page-maininfo {
+    ion-header{
+        ion-navbar{
+            ion-title{
+                .toolbar-title{
+                    color: #0398ca;
+                }
+            }
+        }
+    }
+    .content{
+            background-color: #f0f0f4;
+        }
+    ion-content{
+        .scroll-content{
+            overflow: hidden;
+        }
+        .list{
+            margin: 0;
+            .item{
+                margin: 1px 0;
+            }
+            .info{
+                height: 10vh
+            }
+            .extensiv{
+                height: 12.5vh;
+                display: flex;
+                align-items: flex-end;
+                .label{
+                        margin: 11px 8px 19px 5px;
+                }
+            }
+        }
+        .quit{
+    position: absolute;
+    bottom: 3vh;
+                ion-label{
+                color: #db2d2d;
+                text-align: center;
+                }
+
+            }
+    }
+}

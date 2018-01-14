@@ -1,0 +1,55 @@
+page-s1{
+ion-content{
+    ion-slides{
+        height: 88%;
+    }
+    .slide-zoom{
+        height: 100%;
+    }
+    .scroll-content{
+        overflow: hidden;
+    }
+    ion-grid{
+        height: 100%;
+        .photo{
+            height: 60%;
+        }
+        .text,.btt{
+            height: 20%;
+        }
+        ion-row{
+            display: flex;
+            align-items: center;
+            ion-col{
+                text-align: center;
+                .maintext{
+                    color: #0398ca;
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+                 .desctext{
+                        color: #8b8d92;
+                         margin-top: 25px;
+                        font-size: 15px;
+                    }
+                    
+                    .descphoto{
+                        height: 250px;
+                        width: 250px;
+                        background: url('./../assets/Tutorial_1.png');
+                        background-repeat: no-repeat;
+                        margin: 0 auto;
+                    }
+            }
+        }
+    }
+    .donebtt{
+                        text-transform: none;
+                        background-color: #0398ca;
+                        font-weight: bold;
+                        font-size: 18px;
+                        width: 45vw;
+                        height: 12vw;
+                    }
+}
+}

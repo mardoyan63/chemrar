@@ -1,0 +1,50 @@
+<ion-header mode="ios">
+    <ion-navbar mode="ios">
+        <ion-title mode="ios">Файлы</ion-title>
+        <button (tap)="format=!format" ion-button float-right>
+        <ion-icon *ngIf="!format" name="ios-funnel-outline"></ion-icon>
+        <ion-icon *ngIf="format" name="ios-funnel"></ion-icon>
+        </button>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <format-menu (formatUpdate)="getnames($event)" *ngIf="format"></format-menu>
+    <div>
+        <ion-segment mode="ios" [(ngModel)]="show">
+            <ion-segment-button value="downloads">
+                <ion-label>Загруженные</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="saves">
+                <ion-label>Сохраненные</ion-label>
+            </ion-segment-button>
+        </ion-segment>
+    </div>
+        <div [ngSwitch]="show">
+            <ion-list *ngSwitchCase="'downloads'" mode="md">
+                <div *ngFor="let item of items">
+                <ion-item-sliding *ngIf="item.B">
+    <button class="slideitem" mode="md" ion-item>
+      <div *ngIf="item.form=='mol'" item-start class="doc"><ion-icon name="annaniks-файлы"></ion-icon></div>
+       <div *ngIf="item.form=='png'" item-start class="jpg" ><ion-icon name="annaniks-сканировать2"></ion-icon></div>      
+      <ion-label>
+          <ion-label class="molname">{{item.name}}.{{item.form}}</ion-label>
+          <ion-label text-wrap class="moldes">{{item.des}}</ion-label>
+            </ion-label>
+    </button>
+    <ion-item-options side="right">
+       <button ion-button (tap)="openMenu()" class="btt1" mode="ios">
+              <div class="myfab"><ion-icon class="slideicon" name="md-share"></ion-icon></div>
+       </button>
+       <button ion-button class="btt2" (tap)="removeItem($index)" mode="ios">
+              <div class="myfab"><ion-icon class="slideicon" name="md-close"></ion-icon></div>
+       </button>
+    </ion-item-options>
+  </ion-item-sliding>
+                </div>
+            </ion-list>
+            <ion-list *ngSwitchCase="'saves'">
+                    
+            </ion-list>
+        </div>
+</ion-content>
+  

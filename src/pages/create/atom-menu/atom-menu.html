@@ -1,0 +1,87 @@
+<ion-header mode="ios">
+  <ion-navbar mode="ios">
+    <ion-title mode="ios">
+      Редактирование атома
+    </ion-title>
+    <button (tap)="dismiss()" float-left ion-button mode="ios">
+    <ion-icon  name="annaniks-удалить"></ion-icon>
+    </button>
+    <button (tap)="dismissOk()" float-right ion-button mode="ios">
+    <ion-icon  name="annaniks-окей"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="all"></div>
+<div class="atoms">
+  <ion-grid text-nowrap no-padding class="atoms-scroll">
+    <ion-row text-nowrap justify-content-start>
+      <ion-col col-1 *ngFor="let item of items[0]">
+        <button class="false-btt"  [ngStyle]="{'background-color': item.B ? '#0298c9' : item.color}" ion-button>{{item.name}}</button>
+      </ion-col>
+    </ion-row>
+    <ion-row text-nowrap justify-content-start>
+      <ion-col col-1 *ngFor="let item of items[1]">
+        <button class="false-btt"  [ngStyle]="{'background-color': item.B ? '#0298c9' : item.color}" ion-button>{{item.name}}</button>
+      </ion-col>
+    </ion-row>
+    <ion-row text-nowrap>
+      <ion-col *ngFor="let item of items[2]">
+        <button class="false-btt"  [ngStyle]="{'background-color': item.B ? '#0298c9' : item.color}" ion-button>{{item.name}}</button>
+      </ion-col>
+    </ion-row>
+    <ion-row text-nowrap>
+      <ion-col *ngFor="let item of items[3]">
+        <button class="false-btt"  [ngStyle]="{'background-color': item.B ? '#0298c9' : item.color}" ion-button>{{item.name}}</button>
+      </ion-col>
+    </ion-row>
+    <ion-row text-nowrap>
+      <ion-col *ngFor="let item of items[4]">
+        <button class="false-btt"  [ngStyle]="{'background-color': item.B ? '#0298c9' : item.color}" ion-button>{{item.name}}</button>
+      </ion-col>
+    </ion-row>
+    <ion-row text-nowrap>
+      <ion-col *ngFor="let item of items[5]">
+        <button class="false-btt"  [ngStyle]="{'background-color': item.B ? '#0298c9' : item.color}" ion-button>{{item.name}}</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+
+<ion-grid no-padding class="range-grid">
+  <ion-row>
+    <ion-col no-padding>
+      <ion-item no-lines class="my-rangeitem">
+      <ion-range min="0" max="5" mode="ios" [(ngModel)]="charge">
+        <ion-label class="left-item" range-left>Заряд</ion-label>
+        <ion-label class="right-item" range-right>+{{charge}}</ion-label>
+      </ion-range>
+    </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col no-padding>
+      <ion-item no-lines class="my-rangeitem">
+      <ion-range min="0" max="140" mode="ios" [(ngModel)]="izotop">
+        <ion-label class="left-item" range-left>Изотопы</ion-label>
+        <ion-label class="right-item" range-right>{{izotop}}</ion-label>
+      </ion-range>
+    </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col no-padding>
+      <ion-item no-lines class="my-rangeitem">
+      <ion-range min="0" max="14" mode="ios" [(ngModel)]="hidro">
+        <ion-label class="left-item" range-left>Гидрогены</ion-label>
+        <ion-label class="right-item" range-right>{{hidro}}</ion-label>
+      </ion-range>
+    </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+ 
+    
+    
+
+</ion-content>

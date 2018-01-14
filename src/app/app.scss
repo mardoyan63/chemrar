@@ -1,0 +1,475 @@
+// http://ionicframework.com/docs/theming/
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./../assets/fonts/icomoon.eot?pnjpjf');
+  src:  url('./../assets/fonts/icomoon.eot?pnjpjf#iefix') format('embedded-opentype'),
+    url('./../assets/fonts/icomoon.ttf?pnjpjf') format('truetype'),
+    url('./../assets/fonts/icomoon.woff?pnjpjf') format('woff'),
+    url('./../assets/fonts/icomoon.svg?pnjpjf#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="annaniks"], [class*="annaniks-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ion-md-annaniks-166:before, .ion-ios-annaniks-166:before {
+  content: "\e900";
+  color: #fff;
+}
+.ion-md-annaniks-167:before, .ion-ios-annaniks-167:before {
+  content: "\e901";
+  color: #fff;
+}
+.ion-md-annaniks-168:before, .ion-ios-annaniks-168:before {
+  content: "\e902";
+  color: #000;
+}
+.ion-md-annaniks-169:before, .ion-ios-annaniks-169:before {
+  content: "\e903";
+  color: #000;
+}
+.ion-md-annaniks-170:before, .ion-ios-annaniks-170:before {
+  content: "\e904";
+  color: #000;
+}
+.ion-md-annaniks-171:before, .ion-ios-annaniks-171:before {
+  content: "\e905";
+  color: #000;
+}
+.ion-md-annaniks-172:before, .ion-ios-annaniks-172:before {
+  content: "\e906";
+  color: #000;
+}
+.ion-md-annaniks-173:before, .ion-ios-annaniks-173:before {
+  content: "\e907";
+  color: #000;
+}
+.ion-md-annaniks-Br:before, .ion-ios-annaniks-Br:before {
+  content: "\e908";
+}
+.ion-md-annaniks-Cl:before, .ion-ios-annaniks-Cl:before {
+  content: "\e909";
+}
+.ion-md-annaniks-F:before, .ion-ios-annaniks-F:before {
+  content: "\e90a";
+}
+.ion-md-annaniks-H:before, .ion-ios-annaniks-H:before {
+  content: "\e90b";
+}
+.ion-md-annaniks-I:before, .ion-ios-annaniks-I:before {
+  content: "\e90c";
+}
+.ion-md-annaniks-N:before, .ion-ios-annaniks-N:before {
+  content: "\e90d";
+}
+.ion-md-annaniks-O:before, .ion-ios-annaniks-O:before {
+  content: "\e90e";
+}
+.ion-md-annaniks-P:before, .ion-ios-annaniks-P:before {
+  content: "\e90f";
+}
+.ion-md-annaniks-S:before, .ion-ios-annaniks-S:before {
+  content: "\e910";
+}
+.ion-md-annaniks-C:before, .ion-ios-annaniks-С:before {
+  content: "\e911";
+}
+.ion-md-annaniks-1:before, .ion-ios-annaniks-1:before {
+  content: "\e912";
+  color: #fff;
+}
+.ion-md-annaniks-2:before, .ion-ios-annaniks-2:before {
+  content: "\e913";
+  color: #fff;
+}
+.ion-md-annaniks-3:before, .ion-ios-annaniks-3:before {
+  content: "\e914";
+  color: #fff;
+}
+.ion-md-annaniks-4:before, .ion-ios-annaniks-4:before {
+  content: "\e915";
+  color: #fff;
+}
+.ion-md-annaniks-12:before, .ion-ios-annaniks-12:before {
+  content: "\e916";
+  color: #fff;
+}
+.ion-md-annaniks-13:before, .ion-ios-annaniks-13:before {
+  content: "\e917";
+  color: #fff;
+}
+.ion-md-annaniks-14:before, .ion-ios-annaniks-14:before {
+  content: "\e918";
+  color: #fff;
+}
+.ion-md-annaniks-15:before, .ion-ios-annaniks-15:before {
+  content: "\e919";
+  color: #fff;
+}
+.ion-md-annaniks-16:before, .ion-ios-annaniks-16:before {
+  content: "\e91a";
+  color: #000;
+}
+.ion-md-annaniks-17:before, .ion-ios-annaniks-17:before {
+  content: "\e91b";
+  color: #000;
+}
+.ion-md-annaniks-18:before, .ion-ios-annaniks-18:before {
+  content: "\e91c";
+  color: #000;
+}
+.ion-md-annaniks-19:before, .ion-ios-annaniks-19:before {
+  content: "\e91d";
+  color: #000;
+}
+.ion-md-annaniks-110:before, .ion-ios-annaniks-110:before {
+  content: "\e91e";
+  color: #000;
+}
+.ion-md-annaniks-111:before, .ion-ios-annaniks-111:before {
+  content: "\e91f";
+  color: #000;
+}
+.ion-md-annaniks-112:before, .ion-ios-annaniks-112:before {
+  content: "\e920";
+  color: #000;
+}
+.ion-md-annaniks-113:before, .ion-ios-annaniks-113:before {
+  content: "\e921";
+  color: #000;
+}
+.ion-md-annaniks-114:before, .ion-ios-annaniks-114:before {
+  content: "\e922";
+  color: #000;
+}
+.ion-md-annaniks-115:before, .ion-ios-annaniks-115:before {
+  content: "\e923";
+  color: #000;
+}
+.ion-md-annaniks-116:before, .ion-ios-annaniks-116:before {
+  content: "\e924";
+  color: #fff;
+}
+.ion-md-annaniks-117:before, .ion-ios-annaniks-117:before {
+  content: "\e925";
+  color: #fff;
+}
+.ion-md-annaniks-118:before, .ion-ios-annaniks-118:before {
+  content: "\e926";
+  color: #fff;
+}
+.ion-md-annaniks-119:before, .ion-ios-annaniks-119:before {
+  content: "\e927";
+  color: #fff;
+}
+.ion-md-annaniks-120:before, .ion-ios-annaniks-120:before {
+  content: "\e928";
+  color: #fff;
+}
+.ion-md-annaniks-121:before, .ion-ios-annaniks-121:before {
+  content: "\e929";
+  color: #fff;
+}
+.ion-md-annaniks-122:before, .ion-ios-annaniks-122:before {
+  content: "\e92a";
+  color: #fff;
+}
+.ion-md-annaniks-22:before, .ion-ios-annaniks-22:before {
+  content: "\e92b";
+  color: #fff;
+}
+.ion-md-annaniks-123:before, .ion-ios-annaniks-123:before {
+  content: "\e92c";
+  color: #fff;
+}
+.ion-md-annaniks-124:before, .ion-ios-annaniks-124:before {
+  content: "\e92d";
+  color: #fff;
+}
+.ion-md-annaniks-125:before, .ion-ios-annaniks-125:before {
+  content: "\e92e";
+  color: #fff;
+}
+.ion-md-annaniks-126:before, .ion-ios-annaniks-126:before {
+  content: "\e92f";
+  color: #fff;
+}
+.ion-md-annaniks-127:before, .ion-ios-annaniks-127:before {
+  content: "\e930";
+  color: #fff;
+}
+.ion-md-annaniks-128:before, .ion-ios-annaniks-128:before {
+  content: "\e931";
+  color: #fff;
+}
+.ion-md-annaniks-129:before, .ion-ios-annaniks-129:before {
+  content: "\e932";
+  color: #fff;
+}
+.ion-md-annaniks-130:before, .ion-ios-annaniks-130:before {
+  content: "\e933";
+  color: #fff;
+}
+.ion-md-annaniks-131:before, .ion-ios-annaniks-131:before {
+  content: "\e934";
+  color: #fff;
+}
+.ion-md-annaniks-132:before, .ion-ios-annaniks-132:before {
+  content: "\e935";
+  color: #fff;
+}
+.ion-md-annaniks-133:before, .ion-ios-annaniks-133:before {
+  content: "\e936";
+  color: #fff;
+}
+.ion-md-annaniks-134:before, .ion-ios-annaniks-134:before {
+  content: "\e937";
+  color: #fff;
+}
+.ion-md-annaniks-135:before, .ion-ios-annaniks-135:before {
+  content: "\e938";
+  color: #fff;
+}
+.ion-md-annaniks-136:before, .ion-ios-annaniks-136:before {
+  content: "\e939";
+  color: #fff;
+}
+.ion-md-annaniks-137:before, .ion-ios-annaniks-137:before {
+  content: "\e93a";
+  color: #fff;
+}
+.ion-md-annaniks-138:before, .ion-ios-annaniks-138:before {
+  content: "\e93b";
+  color: #fff;
+}
+.ion-md-annaniks-139:before, .ion-ios-annaniks-139:before {
+  content: "\e93c";
+  color: #fff;
+}
+.ion-md-annaniks-140:before, .ion-ios-annaniks-140:before {
+  content: "\e93d";
+  color: #fff;
+}
+.ion-md-annaniks-141:before, .ion-ios-annaniks-141:before {
+  content: "\e93e";
+  color: #fff;
+}
+.ion-md-annaniks-142:before, .ion-ios-annaniks-142:before {
+  content: "\e93f";
+  color: #fff;
+}
+.ion-md-annaniks-143:before, .ion-ios-annaniks-143:before {
+  content: "\e940";
+  color: #fff;
+}
+.ion-md-annaniks-144:before, .ion-ios-annaniks-144:before {
+  content: "\e941";
+  color: #fff;
+}
+.ion-md-annaniks-145:before, .ion-ios-annaniks-145:before {
+  content: "\e942";
+  color: #fff;
+}
+.ion-md-annaniks-146:before, .ion-ios-annaniks-146:before {
+  content: "\e943";
+  color: #fff;
+}
+.ion-md-annaniks-147:before, .ion-ios-annaniks-147:before {
+  content: "\e944";
+  color: #fff;
+}
+.ion-md-annaniks-148:before, .ion-ios-annaniks-148:before {
+  content: "\e945";
+  color: #fff;
+}
+.ion-md-annaniks-149:before, .ion-ios-annaniks-149:before {
+  content: "\e946";
+  color: #fff;
+}
+.ion-md-annaniks-150:before, .ion-ios-annaniks-150:before {
+  content: "\e947";
+  color: #fff;
+}
+.ion-md-annaniks-151:before, .ion-ios-annaniks-151:before {
+  content: "\e948";
+  color: #fff;
+}
+.ion-md-annaniks-152:before, .ion-ios-annaniks-152:before {
+  content: "\e949";
+  //color: #fff;
+}
+.ion-md-annaniks-153:before, .ion-ios-annaniks-153:before {
+  content: "\e94a";
+  color: #fff;
+}
+.ion-md-annaniks-154:before, .ion-ios-annaniks-154:before {
+  content: "\e94b";
+  color: #fff;
+}
+.ion-md-annaniks-155:before, .ion-ios-annaniks-155:before {
+  content: "\e94c";
+  color: #fff;
+}
+.ion-md-annaniks-156:before, .ion-ios-annaniks-156:before {
+  content: "\e94d";
+  color: #fff;
+}
+.ion-md-annaniks-157:before, .ion-ios-annaniks-157:before {
+  content: "\e94e";
+  color: #fff;
+}
+.ion-md-annaniks-158:before, .ion-ios-annaniks-158:before {
+  content: "\e94f";
+  color: #fff;
+}
+.ion-md-annaniks-159:before, .ion-ios-annaniks-159:before {
+  content: "\e950";
+}
+.ion-md-annaniks-160:before, .ion-ios-annaniks-160:before {
+  content: "\e951";
+  color: #fff;
+}
+.ion-md-annaniks-161:before, .ion-ios-annaniks-161:before {
+  content: "\e952";
+  color: #fff;
+}
+.ion-md-annaniks-162:before, .ion-ios-annaniks-162:before {
+  content: "\e953";
+  color: #fff;
+}
+.ion-md-annaniks-163:before, .ion-ios-annaniks-163:before {
+  content: "\e954";
+  color: #fff;
+}
+.ion-md-annaniks-164:before, .ion-ios-annaniks-164:before {
+  content: "\e955";
+  color: #fff;
+}
+.ion-md-annaniks-165:before, .ion-ios-annaniks-165:before {
+  content: "\e956";
+  color: #fff;
+}
+.ion-md-annaniks-добавить:before, .ion-ios-annaniks-добавить:before {
+  content: "\e957";
+  color: #0499ca;
+}
+.ion-md-annaniks-инфо:before, .ion-ios-annaniks-инфо:before {
+  content: "\e958";
+
+}
+.ion-md-annaniks-инфо-outline:before, .ion-ios-annaniks-инфо-outline:before {
+  content: "\e958";
+color: #0398ca;
+}
+.ion-md-annaniks-файл:before, .ion-ios-annaniks-новый-файл:before {
+  content: "\e959";
+  color: #0398ca;
+}
+.ion-md-annaniks-окей:before, .ion-ios-annaniks-окей:before {
+  content: "\e95a";
+  color: #0398ca;
+}
+.ion-md-annaniks-поделиться:before, .ion-ios-annaniks-поделиться:before {
+  content: "\e95b";
+  color: #0398ca;
+}
+.ion-md-annaniks-редактор:before, .ion-ios-annaniks-редактор:before {
+  content: "\e95c";
+
+}
+.ion-md-annaniks-редактор-outline:before, .ion-ios-annaniks-редактор-outline:before {
+  content: "\e95c";
+ color:#0398ca;
+}
+.ion-md-annaniks-сканировать:before, .ion-ios-annaniks-сканировать .path1:before {
+  content: "\e95d";
+  color: rgb(3, 152, 202);
+}
+.ion-md-annaniks-сканировать2:before, .ion-ios-annaniks-сканировать2:before {
+  content: "\e95e";
+  //margin-left: -1em;
+  //color: rgb(3, 152, 202);
+}
+.ion-md-annaniks-сканировать2-outline:before, .ion-ios-annaniks-сканировать2-outline:before {
+  content: "\e95e";
+  //margin-left: -1em;
+  //color: rgb(3, 152, 202);
+  color:#0398ca;
+}
+.ion-md-annaniks-сканировать:before, .ion-ios-annaniks-сканировать .path3:before {
+  content: "\e95f";
+  margin-left: -1em;
+  color: rgb(3, 152, 202);
+}
+.ion-md-annaniks-сканировать:before, .ion-ios-annaniks-сканировать .path4:before {
+  content: "\e960";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.ion-md-annaniks-стрелка-для-меню:before, .ion-ios-annaniks-стрелка-для-меню:before {
+  content: "\e961";
+  color: #0398ca;
+}
+.ion-md-annaniks-телефон:before, .ion-ios-annaniks-телефон:before {
+  content: "\e962";
+  color: #b8e1ef;
+}
+.ion-md-annaniks-удалить:before, .ion-ios-annaniks-удалить:before {
+  content: "\e963";
+  //color: #fff;
+}
+.ion-md-annaniks-файлы:before, .ion-ios-annaniks-файлы:before {
+  content: "\e964";
+}
+.ion-md-annaniks-файлы-outline:before, .ion-ios-annaniks-файлы-outline:before {
+  content: "\e964";
+  color: #0398ca;
+}
+.ion-md-annaniks-фильтр:before, .ion-ios-annaniks-фильтр:before {
+  content: "\e965";
+  color: #0398ca;
+}
+.ion-md-annaniks-чекбокс-заполненый:before, .ion-ios-annaniks-чекбокс-заполненый:before {
+  content: "\e966";
+  color: #0398ca;
+}
+.ion-md-annaniks-чекбокс-пустой:before, .ion-ios-annaniks-чекбокс-пустой:before {
+  content: "\e967";
+  color: #73757b;
+}
+ion-app.md{
+  background: transparent;
+}
+ion-app.ios{
+  background: transparent;
+}
+ion-app.wp{
+  background: transparent;
+}
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.

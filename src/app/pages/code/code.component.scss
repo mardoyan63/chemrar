@@ -1,0 +1,89 @@
+page-code{
+ion-content{
+    ion-grid{
+            margin-top: 25px;
+        ion-row{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+             .name{
+        font-size: 20px;
+        font-weight: 100;
+        color:#0398ca;
+    }
+    .inpcol{
+        display: flex;
+    }
+            ion-col{
+                .inp{
+                     color: #0398ca;
+                    width: 135px;
+                    font-size: 20px;
+                    border: none;
+                    margin: 0 auto;
+                    border-bottom: 2px solid rgba(0,0,0,0.15);
+                }
+                .inp:focus{
+                    border-bottom: 2px solid rgba(0,153,203,1);
+                }
+               ion-icon{
+                   font-size: 30px;
+               }
+                 .text{
+        color: #8b8d92;
+        font-size: 12px;
+    }
+  
+                .activetext{
+                     color: #0398ca;
+                    font-size: 12px;
+                    border-bottom: 1px solid #0398ca;
+                }
+                .activetext.activated{
+                    color:#d1d4db;
+                    border-color: #d1d4db;
+                }
+                .btt{
+                    background-color: #0398ca;
+                    text-transform: none;
+                    height: 13vw;
+                    width: 50vw;
+                }
+                .btt.activated{
+                    background-color: #d1d4db;
+                }
+                .appicon{
+                    background-image: url('./../assets/Logo.png');
+                    background-size: cover; 
+                    background-repeat: no-repeat; 
+                    height: 17vw;
+                    width: 23vw;
+                }
+            }
+        }
+    }
+   
+   .item.item-input.input-has-focus .item-inner{
+                    box-shadow: inset 0 -1px 0 0 #0398ca;
+                    border-bottom-color: #0398ca;
+                }
+  
+    .col{
+                padding: 0 0 0 0;
+        }
+    .item{
+            padding-left: 0;
+         }
+        .label{
+           margin: 0 auto;
+        }
+        .item.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+            box-shadow: inset 0 -1px 0 0 rgb(209, 212,219);
+                border-bottom-color: rgb(209, 212,219);
+        }
+            .item.item-block .item-inner{
+                box-shadow: inset 0 -1px 0 0 rgb(209, 212,219);
+                border-bottom-color: rgb(209, 212,219);
+            }
+}
+}
