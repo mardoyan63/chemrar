@@ -44,7 +44,7 @@ ionViewDidEnter(){
   this.start();
   
 }
-//sdfsdfsdfsdfsdfds
+//name
 ionViewWillLeave(){
   this.cameraPreview.stopCamera();
 }
